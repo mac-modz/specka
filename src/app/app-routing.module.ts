@@ -14,6 +14,10 @@ const routes: Routes = [
         component: HomeContainerComponent
     },
     {
+        path: 'user',
+        component: HomeContainerComponent
+    },
+    {
         path: '**',
         component: ErrorComponent
     }
