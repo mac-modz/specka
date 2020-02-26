@@ -1,0 +1,13 @@
+src/assets/samples/*
+package.json
+package-lock.json
+dist
+.angulardoc.json
+.vscode/*
+.idea/*
+node_modules/*
+.idea/*
+.vscode/*
+.git*
+*.svg
+*.ico
