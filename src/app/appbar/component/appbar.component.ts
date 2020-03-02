@@ -20,7 +20,7 @@ export class AppbarComponent implements OnInit {
         this.authService.login();
     }
 
-    private isLoggedIn(): boolean {
+    isLoggedIn(): boolean {
         return this.authService.loggedIn;
     }
 }
