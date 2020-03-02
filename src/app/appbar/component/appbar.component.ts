@@ -7,7 +7,20 @@ import { AuthService } from '../../core/auth/auth.service';
     styleUrls: ['./appbar.component.scss']
 })
 export class AppbarComponent implements OnInit {
+    loggedIn = false;
     constructor(private authService: AuthService) {}
 
     ngOnInit() {}
+
+    logout() {
+        this.authService.logout();
+    }
+
+    login() {
+        this.authService.login();
+    }
+
+    private isLoggedIn() {
+        this.loggedIn = this.authService.loggedIn;
+    }
 }
