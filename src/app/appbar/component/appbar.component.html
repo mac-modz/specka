@@ -1,1 +1,18 @@
-<p>appbar works!</p>
+<ul>
+    <li *ngIf="!authService.loggedIn">
+        <button class="btn btn-primary" (click)="authService.login()">
+            Log In
+        </button>
+    </li>
+    <li *ngIf="authService.loggedIn">
+        <button class="btn btn-primary" (click)="authService.logout()">
+            Log Out
+        </button>
+    </li>
+    <li>
+        <a [routerLink]="['/home']">Home</a>
+    </li>
+    <li>
+        <a [routerLink]="['/user-profile']">Profile</a>
+    </li>
+</ul>

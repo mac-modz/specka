@@ -8,8 +8,9 @@ import { AppbarModule } from './appbar/appbar.module';
 import { HomeComponent } from './pages/home/component/home.component';
 import { HomeContainerComponent } from './pages/home/container/home-container.component';
 import { ErrorComponent } from './pages/error/error.component';
-import { UserProfileComponent } from './pages/user-profile/component/user-profile/user-profile.component';
-import { UserProfileContainerComponent } from './pages/user-profile/container/user-profile-container/user-profile-container.component';
+import { CallbackComponent } from './pages/callback/callback.component';
+import { UserProfileContainerComponent } from './pages/user-profile/container/user-profile-container.component';
+import { UserProfileComponent } from './pages/user-profile/component/user-profile.component';
 
 const COMPONENTS = [
     AppComponent,
@@ -17,7 +18,8 @@ const COMPONENTS = [
     HomeContainerComponent,
     ErrorComponent,
     UserProfileContainerComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    CallbackComponent
 ];
 
 @NgModule({

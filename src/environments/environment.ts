@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    AUTH0_APP_CLIENT_ID: 'SimRKTIm7Q05LOVrB7BHdWyv7ArsDKLv',
+    AUTH0_DOMAIN: 'specka.eu.auth0.com'
 };
 
 /*
